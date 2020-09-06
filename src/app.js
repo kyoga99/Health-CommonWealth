@@ -22,7 +22,6 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <PrivateRoute path="/profile" component={Profile} />
-          <PrivateRoute path="/external-api" component={ExternalApi} />
         </Switch>
       </Container>
       <Footer />
