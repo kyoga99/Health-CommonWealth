@@ -8,10 +8,9 @@ class Table extends Component {
       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
       this.state = { //state is by default an object
          procedures: [
-            { id: '1', name: 'knee surgery', hospital: 'Seattle Grace', date: '09/04/2020', price: '$21,000.00', contractors: 'no' },
-            { id: '2', name: 'knee surgery', hospital: 'Seattle Grace', date: '09/04/2020', price: '$21,000.00', contractors: 'no' },
-            { id: '3', name: 'knee surgery', hospital: 'Seattle Grace', date: '09/04/2020', price: '$21,000.00', contractors: 'no' },
-            { id: '4', name: 'knee surgery', hospital: 'Seattle Grace', date: '09/04/2020', price: '$21,000.00', contractors: 'no' }
+            { id: '1', name: 'INFLAMMATORY BOWEL DISEASE', hospital: 'Kaiser Permanente', date: '08/19/2020', price: '$34,543.00', contractors: 'No' },
+            { id: '2', name: 'FEVER AND INFLAMMATORY CONDITIONS', hospital: 'Kaiser Permanente', date: '03/16/2020', price: '$23,829.00', contractors: 'Yes (Warning: actual cost may be higher than estimate due to 3rd-party contractors)' },
+            { id: '3', name: 'HYPERTENSION', hospital: 'Kaiser Permanente', date: '07/10/2019', price: '$28,865.00', contractors: 'No' }
          ]
       }
    }
@@ -44,7 +43,7 @@ class Table extends Component {
             <h1 id='title'>Procedure History</h1>
             <table id='procedures'>
                <tbody>
-               		 <tr>{this.renderTableHeader()}</tr>
+                      <tr>{this.renderTableHeader()}</tr>
                   {this.renderTableData()}
                </tbody>
             </table>
