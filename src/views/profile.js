@@ -9,12 +9,6 @@ const Profile = () => {
   const { name, picture, email } = user;
 
   return (
-    <Table />
-    );
-};
-  export default Profile;
-
-  return (
     <Container className="mb-5">
       <Row className="align-items-center profile-header mb-5 text-center text-md-left">
         <Col md={2}>
@@ -29,11 +23,13 @@ const Profile = () => {
           <p className="lead text-muted">{email}</p>
         </Col>
       </Row>
-      <Row>
-        <Highlight>{JSON.stringify(user, null, 2)}</Highlight>
-      </Row>
+      
+      <Table />
     </Container>
   );
 };
+
+export default Profile;
+
 
 
