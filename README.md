@@ -1,5 +1,7 @@
 # Health-CommonWealth
 
+Personalized patient portal focused on cost transparency between patients and hospitals to unite a fragmented healthcare system.
+
 ## Link of the hosted app:-
 
 http://healthcommonwealth.tech/
